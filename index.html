@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./tailwind.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,37 +20,68 @@
   </style>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<main class="max-w-sm text-LettersBlue">
+  <section>
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+  </section>
+  <section class="p-5">
+    <h1 class="font-bold text-4xl">
+      Stay updated!
+    </h1>
+    <p class="font-normal my-6">
+      Join 60,000+ product managers receiving monthly updates on:
+    </p>
+    <ul>
+      <li>
+        <div class="flex">
+          <figure class="mr-4">
+            <img src="./assets/images/icon-list.svg" alt="">
+          </figure>
+          <p>Product discovery and building what matters</p>
+        </div>
+      </li>
+      <li>
+        <div class="flex">
+          <figure class="mr-4">
+            <img src="./assets/images/icon-list.svg" alt="">
+          </figure>
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+      </li>
+      <li>
+        <div class="flex">
+          <figure class="mr-4">
+            <img src="./assets/images/icon-list.svg" alt="">
+          </figure>
+          <p>And much more!</p>
+        </div>
+      </li>
+
+      <li>
+        
+      </li>
+      <li>
+        
+      </li>
+    </ul>
+    <form action="" class="mt-8">
+      <label for="emailBox">Email adress</label>
+      <input type="text" name="emailBox" id="emailBox" placeholder="email@company.com" class="w-full p-4 border border-gray-400 rounded-md my-4">
+      <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md">Subscribe to monthly Newsletter</button>
+    </form>
+  </section>
+
+</main>
+    
 
   <!-- Sign-up form start -->
 
-  Stay updated!
+  
 
-  Join 60,000+ product managers receiving monthly updates on:
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
+  
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
