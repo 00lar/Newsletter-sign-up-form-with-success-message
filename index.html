@@ -19,58 +19,66 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="md:bg-DarkSlateGrey lg:flex flex-col lg:justify-center">
+<body class="">
 
-<main class="max-w-sm bg-white text-LettersBlue lg:max-w-none lg:w-8/12 lg:h-4/6">
-  <section>
-    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-  </section>
-  <section class="p-5">
-    <h1 class="font-bold text-4xl">
-      Stay updated!
-    </h1>
-    <p class="font-normal my-6">
-      Join 60,000+ product managers receiving monthly updates on:
-    </p>
-    <ul>
-      <li>
-        <div class="flex">
-          <figure class="mr-4">
-            <img src="./assets/images/icon-list.svg" alt="">
-          </figure>
-          <p>Product discovery and building what matters</p>
-        </div>
-      </li>
-      <li>
-        <div class="flex">
-          <figure class="mr-4">
-            <img src="./assets/images/icon-list.svg" alt="">
-          </figure>
-          <p>Measuring to ensure updates are a success</p>
-        </div>
-      </li>
-      <li>
-        <div class="flex">
-          <figure class="mr-4">
-            <img src="./assets/images/icon-list.svg" alt="">
-          </figure>
-          <p>And much more!</p>
-        </div>
-      </li>
+<main class="md:bg-DarkSlateGrey lg:flex lg:justify-center lg:items-center lg:w-screen lg:h-screen" >
+  <div class="max-w-sm bg-white text-LettersBlue lg:max-w-7xl lg:max-h-full lg:w-8/12 lg:h-4/6 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:rounded-xl ">
+    <section class="lg:col-start-2 lg:col-span-1 lg:p-4 ">
+      <picture class="">
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 450px)">
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="w-full">
+      </picture>
+    </section>
 
-      <li>
-        
-      </li>
-      <li>
-        
-      </li>
-    </ul>
-    <form action="" class="mt-8">
-      <label for="emailBox">Email adress</label>
-      <input type="text" name="emailBox" id="emailBox" placeholder="email@company.com" class="w-full p-4 border border-gray-400 rounded-md my-4">
-      <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md">Subscribe to monthly Newsletter</button>
-    </form>
-  </section>
+    <section class="p-5 xl:p-20 xl:mt-10 lg:col-start-1 lg:col-span-1 lg:p-8 lg:row-start-1 ">
+      <h1 class="font-bold text-4xl xl:text-7xl">
+        Stay updated!
+      </h1>
+      <p class="font-normal my-6 xl:text-xl">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul class="xl:text-xl space-y-4">
+        <li>
+          <div class="flex">
+            <figure class="mr-4">
+              <img src="./assets/images/icon-list.svg" alt="">
+            </figure>
+            <p>Product discovery and building what matters</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex">
+            <figure class="mr-4">
+              <img src="./assets/images/icon-list.svg" alt="">
+            </figure>
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+        </li>
+        <li>
+          <div class="flex">
+            <figure class="mr-4">
+              <img src="./assets/images/icon-list.svg" alt="">
+            </figure>
+            <p>And much more!</p>
+          </div>
+        </li>
+  
+        <li>
+          
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+      <form action="" class="mt-8 xl:text-xl">
+        <label for="emailBox" class="font-bold ">Email adress</label>
+        <input type="text" name="emailBox" id="emailBox" placeholder="email@company.com" class="w-full p-4 border border-gray-400 rounded-md my-4">
+        <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md">Subscribe to monthly Newsletter</button>
+      </form>
+    </section>
+  
+  </div>
 
 </main>
     
