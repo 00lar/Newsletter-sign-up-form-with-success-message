@@ -4,6 +4,7 @@ const Parte1 = document.querySelector("#Parte1");
 const Parte2 = document.querySelector("#Parte2");
 const correo = document.querySelector("#emailBox");
 const ErrorAlert = document.querySelector("#ErrorAlert");
+const success = document.querySelector("#success")
 
 
 
@@ -18,10 +19,12 @@ function ShowPart3(event){
         if (expresionRegular.test(CorreoProp)){
             Parte1.classList.add("hiddens");
             Parte2.classList.add("hiddens")
+            success.classList.remove("hiddens")
         } 
     }
     else {
         ErrorAlert.classList.remove("hiddens")
+        
     }
 
 
