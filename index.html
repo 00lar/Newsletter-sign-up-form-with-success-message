@@ -13,17 +13,12 @@
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="">
 
 <main class="md:bg-DarkSlateGrey lg:flex lg:justify-center lg:items-center lg:w-screen lg:h-screen" >
   <div class="max-w-sm bg-white text-LettersBlue lg:max-w-6xl lg:max-h-full lg:w-8/12 lg:h-4/6 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:rounded-xl ">
-    <section class="lg:col-start-2 lg:col-span-1 lg:p-4 ">
+    <section class="lg:col-start-2 lg:col-span-1 lg:p-4" id="Parte1">
       <picture class="">
         <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 450px)">
         <source srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -31,8 +26,8 @@
       </picture>
     </section>
 
-    <section class="p-5 xl:p-14 xl:mt-10 lg:col-start-1 lg:col-span-1 lg:p-8 lg:row-start-1 ">
-      <h1 class="font-bold text-4xl xl:text-7xl">
+    <section class="p-5 xl:p-12 xl:mt-10 lg:col-start-1 lg:col-span-1 lg:p-8 lg:row-start-1" id="Parte2">
+      <h1 class="font-bold text-4xl xl:text-6xl">
         Stay updated!
       </h1>
       <p class="font-normal my-6 xl:text-xl">
@@ -74,26 +69,19 @@
       <form action="" class="mt-8 xl:text-xl">
         <label for="emailBox" class="font-bold ">Email adress</label>
         <input type="text" name="emailBox" id="emailBox" placeholder="email@company.com" class="w-full p-4 border border-gray-400 rounded-md my-4">
-        <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md">Subscribe to monthly Newsletter</button>
+        <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md hover:bg-naranjoso" id="BtnSubmit">Subscribe to monthly Newsletter</button>
       </form>
     </section>
   
   </div>
 
 </main>
-    
-
   <!-- Sign-up form start -->
-
-  
-
-
-  
-  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ module.exports = {
         "DarkSlateGrey": "hsl(234, 29%, 20%)",
         "CharcoalGrey": "hsl(235, 18%, 26%)",
         "LettersBlue" : "#22263f",
+        "naranjoso":"#ff6251",
       },
       fontFamily: {
         "Roboto": ['Roboto', "sans-serif"]
