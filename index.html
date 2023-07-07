@@ -55,7 +55,7 @@
             <figure class="mr-4">
               <img src="./assets/images/icon-list.svg" alt="">
             </figure>
-            <p>And much more!</p>
+            <p >And much more!</p>
           </div>
         </li>
   
@@ -67,9 +67,13 @@
         </li>
       </ul>
       <form action="" class="mt-8 xl:text-xl">
-        <label for="emailBox" class="font-bold ">Email adress</label>
+        <div class="flex justify-between">
+          <label for="emailBox" class="font-bold ">Email adress</label>
+          <p id="ErrorAlert" class="text-red-400 font-bold hiddens">valid email required</p>
+        </div>
+        
         <input type="text" name="emailBox" id="emailBox" placeholder="email@company.com" class="w-full p-4 border border-gray-400 rounded-md my-4">
-        <button class="bg-CharcoalGrey w-full text-white p-4 rounded-md hover:bg-naranjoso" id="BtnSubmit">Subscribe to monthly Newsletter</button>
+        <button id="BtnSubmit" class="bg-CharcoalGrey w-full text-white p-4 rounded-md hover:bg-naranjoso" >Subscribe to monthly Newsletter</button>
       </form>
     </section>
   

@@ -1,12 +1,30 @@
-const BtnSubmit = document.querySelector("#BtnSubmit");
+let BtnSubmit = document.querySelector("#BtnSubmit");
 
-const parte1 = document.querySelector("#Parte1");
-const parte2 = document.querySelector("#Parte2");
-console.log("hola")
+const Parte1 = document.querySelector("#Parte1");
+const Parte2 = document.querySelector("#Parte2");
+const correo = document.querySelector("#emailBox");
+const ErrorAlert = document.querySelector("#ErrorAlert");
+
+
 
 BtnSubmit.addEventListener("click",ShowPart3)
 
-function ShowPart3(){
-    console.log("hola")
-    parte1.classList.add("hiddens")
+function ShowPart3(event){
+    event.preventDefault()  
+    CorreoProp = correo.value;
+    const expresionRegular = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    if (CorreoProp.length > 8) {
+        if (expresionRegular.test(CorreoProp)){
+            Parte1.classList.add("hiddens");
+            Parte2.classList.add("hiddens")
+        } 
+    }
+    else {
+        ErrorAlert.classList.remove("hiddens")
+    }
+
+
+    
 }
+
